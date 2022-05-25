@@ -6,6 +6,8 @@ function scrollValue() {
     var a3 = document.getElementById('a3');
     var a4 = document.getElementById('a4');
     var a5 = document.getElementById('a5');
+    var tszax = document.getElementById('test');
+    var p = document.getElementById('p');
     var scroll = window.scrollY;
     if (scroll < 200) {
         navbar.classList.remove('BgColour');
@@ -15,6 +17,8 @@ function scrollValue() {
         a3.classList.remove("acolor");
         a4.classList.remove("acolor");
         a5.classList.remove("acolor");
+        tszax.classList.remove("tscolor");
+        p.classList.remove("pclr");
 
     } else {
         navbar.classList.add('BgColour');
@@ -24,6 +28,8 @@ function scrollValue() {
         a3.classList.add("acolor");
         a4.classList.add("acolor");
         a5.classList.add("acolor");
+        tszax.classList.add("tscolor");
+        p.classList.add("pclr");
     }
 }
 
